@@ -1,0 +1,15 @@
+{
+  "name": "streamline-esm",
+  "version": "0.0.1",
+  "description": "A package that streamlines the intertwinement of physics and threejs for game engine like code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild index.js --bundle --format=esm --outfile=dist/streamline-esm.min.js --minify --platform=browser"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.25.2"
+  }
+}
