@@ -13,6 +13,7 @@ import Utils from "./src/util/util.js";
 import Tcopy from "./src/physics/tcopy.js";
 import Debug from "./src/debug/debug.js"
 import Initialize from "./src/physics/initialize.js";
+import p from "./src/physics/p.js";
 
 const streamline = {
     Vec3,
@@ -29,7 +30,8 @@ const streamline = {
         Sync
     },
     Physics: {
-        Initialize
+        Initialize,
+        ...p
     },
     Rendering,
 
@@ -37,7 +39,8 @@ const streamline = {
     TYPES: checktypes,
 
     Utils,
-    Debug
+    Debug,
+    
 };
 
 window.THREE = THREE; //disable after
