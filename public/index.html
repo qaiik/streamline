@@ -1,0 +1,13 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <script type="module">
+      import vec3 from "../dist/streamline-esm.min.js";
+      import { GLTFLoader } from "https://cdn.skypack.dev/three@0.133.0/examples/jsm/loaders/GLTFLoader.js"
+      window.gl = GLTFLoader;
+      window.streamline = vec3
+    </script>
+  </body>
+</html>

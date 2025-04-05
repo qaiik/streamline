@@ -7,7 +7,7 @@ export default function MakeRapierTrimesh(mesh, world) {
     if (!vertices || !indices) return null;
 
     const colliderDesc = RAPIER.ColliderDesc.trimesh(vertices, indices);
-    const collider = world.createCollider(colliderDesc);
+    // const collider = world.createCollider(colliderDesc);
 
-    return collider;
+    return colliderDesc;
 }

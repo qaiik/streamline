@@ -1,3 +1,5 @@
+import DebugRenderer from "./debugRenderer";
+
 export default {
     Expose(o) {
         if(window["__streamline_debug_mode"] || false) {
@@ -28,4 +30,6 @@ export default {
     LogForce(...values) {
         console.log(...values)
     },
+
+    DebugRenderer
 }

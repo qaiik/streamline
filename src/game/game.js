@@ -4,6 +4,7 @@ import MakeSLGameProps from "./makeGameProperties";
 import MakeScene from "./scene";
 import MakeSLGame from "./makeSLGame";
 import THREEObject from "./threeobject";
+import RAPIERObject from "./rapierobject";
 
 export default {
     MakeCamera,
@@ -11,5 +12,6 @@ export default {
     MakeSLGameProps,
     MakeSLGame,
     GameLoop,
-    THREEObject
+    THREEObject,
+    RAPIERObject
 }

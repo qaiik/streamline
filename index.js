@@ -14,6 +14,8 @@ import Tcopy from "./src/physics/tcopy.js";
 import Debug from "./src/debug/debug.js"
 import Initialize from "./src/physics/initialize.js";
 import p from "./src/physics/p.js";
+import Object3D from "./src/game/3DObject.js";
+import { GLTFLoader } from "./lib/gltf.js";
 
 const streamline = {
     Vec3,
@@ -40,7 +42,8 @@ const streamline = {
 
     Utils,
     Debug,
-    
+    Object3D,
+    GLTFLoader
 };
 
 window.THREE = THREE; //disable after

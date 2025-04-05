@@ -25,6 +25,8 @@ export default function MakeGameProps() {
     const s = MakeScene();
     const c = MakeCamera();
 
+    s.userData.objects = []
+
     const sd = new StreamlineSceneDescriptor(r,s,c,gc,"example_project","example/path/");
     const ss = new StreamlineScene(sd);
 
@@ -35,8 +37,9 @@ export default function MakeGameProps() {
         StreamlineRenderer: r,
         Renderer: sr,
         Scene: s,
-        Camera: c,
         SceneDescriptor: sd,
+        StreamlineScene: ss,
+        Camera: c,
         RenderFunction: makeRenderPass(r,s,c),
         GameLoop: gl
     }

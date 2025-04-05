@@ -8,6 +8,7 @@ export default class StreamlineScene {
         this.Canvas = d.GameCanvas;
         this.Renderer = new StreamlineRenderer(d.RendererObject);
         this.StreamlineScene = null;
+        this.objects = []
     }
 
     children() {
